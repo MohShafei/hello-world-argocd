@@ -42,7 +42,7 @@ data:
     <body>
         <div class="container">
             <h1>Hello World!</h1>
-            <p>Deployed with ArgoCD on k3s</p>
+            <p>Deployed with ArgoCD on k3sAAAA</p>
         </div>
     </body>
     </html>
