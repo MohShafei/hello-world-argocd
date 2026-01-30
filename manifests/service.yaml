@@ -5,9 +5,10 @@ metadata:
   namespace: hello-world
 spec:
   selector:
-    app: hello-world  # This MUST match your deployment labels
+    app: hello-world
   ports:
     - protocol: TCP
-      port: 80        # Service port (external)
-      targetPort: 80  # Container port (internal)
-  type: NodePort      # Makes it accessible from outside
+      port: 80
+      targetPort: 80
+      nodePort: 30080  # Fixed port (30000-32767)
+  type: NodePort
