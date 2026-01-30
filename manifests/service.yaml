@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+  namespace: hello-world
+spec:
+  selector:
+    app: hello-world  # This MUST match your deployment labels
+  ports:
+    - protocol: TCP
+      port: 80        # Service port (external)
+      targetPort: 80  # Container port (internal)
+  type: NodePort      # Makes it accessible from outside
