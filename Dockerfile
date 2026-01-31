@@ -12,7 +12,7 @@ LABEL maintainer="Mohammed AlShafei"
 LABEL version="1.0"
 LABEL description="Hello World Web App"
 
-# Expose port 80
-EXPOSE 80
+# Expose port 8080
+EXPOSE 8080
 
 # nginx runs automatically with CMD from base image

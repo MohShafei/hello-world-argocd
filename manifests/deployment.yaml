@@ -18,7 +18,7 @@ spec:
         image: lr.mshafei.site/hello-world-app:latest
         imagePullPolicy: Always  # Always pull latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
         resources:
           requests:
             memory: "64Mi"
