@@ -29,12 +29,12 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 80
+            port: 8899
           initialDelaySeconds: 5
           periodSeconds: 10
         readinessProbe:
           httpGet:
             path: /
-            port: 80
+            port: 8899
           initialDelaySeconds: 5
           periodSeconds: 10
